@@ -8,9 +8,9 @@ public_folder: "/media"
 collections:
   - name: "posts"
     label: "Posts"
-    folder: "content/posts"
+    folder: "blog/content/posts"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}---{{title}}"
     fields:
       - {label: "Template", name: "template", widget: "hidden", default: "post"}
       - {label: "Title", name: "title", widget: "string"}
@@ -24,7 +24,7 @@ collections:
 
   - name: "pages"
     label: "Pages"
-    folder: "content/pages"
+    folder: "blog/content/pages"
     create: true
     slug: "{{slug}}"
     fields:
